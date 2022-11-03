@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  apache:
+     image: httpd
+     container_name: web-server
+     ports:
+        - '80:80'
+     volumes:
+        - ./website:/usr/local/apache2/htdocs
+
